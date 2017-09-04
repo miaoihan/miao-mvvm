@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>a MVVM frame named miao</title>
+  <script src="miao.js"></script>
+</head>
+<body>
+    <div id="root">
+      姓名: <span>{{name}}</span> <br>
+      年龄: <span>{{age}}</span> <br>
+      性别: <span>{{sex}}</span><br>
+    </div>
+    <script>
+      var miao = new Miao({
+        el: '#root',
+        data: {
+          name: '王语嫣',
+          age: 18,
+          sex: '女'
+        }
+      })  
+    </script>
+</body>
+</html>
